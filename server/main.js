@@ -6,10 +6,9 @@ const FlatColorsSample =[
   {name: 'Red #2', hex: '#EF5350', click: 0},
   {name: 'Red #3', hex: '#D32F2F', click: 0},
   {name: 'Red #4', hex: '#FF5252', click: 0},
-  {name: 'Red #5', hex: '#D50000', click: 0},
+  {name: 'Red #5', hex: '#D50000', click: 0}
 ];
-//
-//
+
 // 'red': {
 //    '50':   {hex: '#FFEBEE'},
 //    '100':  {hex: '#FFCDD2'},
@@ -304,15 +303,15 @@ const FlatColorsSample =[
 // }
 
 Meteor.startup(() => {
-  const numberRecords = FlatColors.find({}).count();
-
-  if(!numberRecords) {
-    FlatColorsSample.map(color =>{
-        const [name, hex, click] = color;
-        FlatColors.insert({
-          name, hex, click
-        });
-    });
-  }
+  // const numberRecords = FlatColors.find({}).count();
+  //
+  // if(!numberRecords) {
+  //   FlatColorsSample.map(color =>{
+  //       const [name, hex, click] = color;
+  //       FlatColors.insert({
+  //         name, hex, click
+  //       });
+  //   });
+  // }
 
 });
