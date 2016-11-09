@@ -1,0 +1,35 @@
+.plateApp{
+  width: 100%;
+}
+
+.plate {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+}
+
+.inputSection {
+  width: 50%;
+  margin-left: 25%;
+  padding-top: 200px;
+}
+
+#hexInput, #rgbInput {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(34, 34, 34, .3);
+  border-radius: 0;
+  font-size: 3em;
+  padding: 0;
+  padding-bottom: 1px;
+  margin: .5em 0 .25em;
+  width: 100%;
+  -webkit-transition: border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#hexInput:focus, #rgbInput:focus {
+  border-width: 2px;
+  border-color: rgba(34, 34, 34, .9);
+  padding: 0;
+  outline: 0;
+}
