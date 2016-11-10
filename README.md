@@ -1,7 +1,7 @@
 #React Hue
 React Hue ia a color palette tool built in a combination of Meteor.js, React, Material UI, Bootstrap. This simple web app mainly to contribute to seek what are better colors for web, mobile, UI development, the popular color set used by industry companies, the popular color rank in Dribbble, color toolboxs, and some information for color blindness.
 
-###Version 1.0
+###Version: Under development.
 
 ##Why use Meteor?
 Real-time, easy-use.
