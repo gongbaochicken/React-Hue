@@ -4,7 +4,7 @@ React Hue ia a color palette tool built in a combination of Meteor.js, React, Ma
 ## :memo: Version: Under development.
 
 ##Why use Meteor?
-Real-time, easy-use.
+The real-time, easy-use fullstack web platform with data synchronization client/server (DDP).
 
 ##Why use React?
 React is fast rendered, and enforces a lot of rules and guidelines that make it clearer what the “right” way to do any given task is. While it’s not as tightly integrated with Meteor (yet), it does have a much larger overall ecosystem, and also supports a couple extra key features that Blaze doesn’t
