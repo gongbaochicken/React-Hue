@@ -10,20 +10,26 @@ class Plate extends Component {
       event.preventDefault();
       let value = this.refs.hex.value;
 
-      var rgb = hexToRgb(this.state.background);
-      //console.log(rgb);
-      if(rgb){
-        var rgbString = "RGB(" + rgb.r + "," + rgb.g + "," + rgb.b + ")";
+      //For both '#ffffff' and 'ffffff' work
+      if(value.length >0 && value.slice(0, 1) != '#'){
+        value = "#"+value;
       }
 
-      // if(value.slice(0) == '#'){
-      //
-      // }else if(value != ''){
-      //   value = "#"+value;
-      // }
-      // console.log(value);
-      this.setState({background: value,
-                    outputRgb: rgbString});
+      //hex start with # is invalid, if length < 4;
+      //hex start without # is invalid, if length < 3.
+      if(value.slice(0, 1) == '#' && value.length < 4
+        ||  value.length < 3){
+        this.setState({background: value,
+                      outputRgb: ""});
+      }else{
+        //conversion from hex to rgb
+        var rgb = hexToRgb(value);
+        if(rgb){
+          var rgbString = "RGB(" + rgb.r + "," + rgb.g + "," + rgb.b + ")";
+        }
+        this.setState({background: value,
+                      outputRgb: rgbString});
+      }
   }
 
   // handleRGBHex(event){

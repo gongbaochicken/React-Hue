@@ -1,12 +1,21 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom';
+import { Router, Route, Link, IndexRoute, browserHistory} from 'react-router'
 
 import App from './components/app';
-import Header from './components/header';
-import Footer from './components/footer';
+import Converter from './components/converter';
+import SliderPalette from './components/sliderPalette';
 
-Meteor.startup(()=>{
-  ReactDOM.render(<Header />, document.querySelector('.render-header'));
-  ReactDOM.render(<App />, document.querySelector('.render-target'));
-  ReactDOM.render(<Footer />, document.querySelector('.render-footer'));
+const routes = (
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Converter} />
+      <Route path="converter" component={Converter} />
+      <Route path="sliderpalette" component={SliderPalette} />
+    </Route>
+  </Router>
+);
+
+Meteor.startup(() => {
+  ReactDOM.render(routes, document.querySelector('.render-target'));
 });
