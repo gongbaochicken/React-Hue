@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Plate extends Component {
   constructor(props){
     super(props);
-    this.state = {background: '', outputRgb: ''};
+    this.state = {background: '#DB932A', outputRgb: 'rgb(219, 147, 42)'};
   }
 
   handleHexRGB(event){
@@ -66,8 +66,8 @@ class Plate extends Component {
     return (
       <div className="plate" style={style}>
         <div className="inputSection">
-          <input type="text" name="HEX" id="hexInput" onChange={this.handleHexRGB.bind(this)} ref="hex" placeholder="HEX #" autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" />
-          <input type="text" name="rgb" id="rgbInput" value={this.state.outputRgb} placeholder="rgb" autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" />
+          <input type="text" name="HEX" id="hexInput" value={this.state.background} onChange={this.handleHexRGB.bind(this)} ref="hex" placeholder="HEX #" autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" />
+          <input type="text" name="rgb" id="rgbInput" defaultValue={this.state.outputRgb} placeholder="rgb" autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" />
         </div>
       </div>
     );

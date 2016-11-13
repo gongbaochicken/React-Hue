@@ -3,15 +3,17 @@ import ReactDOM from 'react-dom';
 import { Router, Route, Link, IndexRoute, browserHistory} from 'react-router'
 
 import App from './components/app';
+import ColorTabComponent from './components/colorTabComponent';
 import Converter from './components/converter';
 import SliderPalette from './components/sliderPalette';
 
 const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={Converter} />
+      <IndexRoute component={ColorTabComponent} />
       <Route path="converter" component={Converter} />
-      <Route path="sliderpalette" component={SliderPalette} />
+      <Route path="palette" component={SliderPalette} />
+      <Route path="x" component={ColorTabComponent} />
     </Route>
   </Router>
 );
