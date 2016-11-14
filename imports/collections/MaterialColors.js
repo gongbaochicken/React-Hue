@@ -1,8 +1,8 @@
 import {Mongo} from 'meteor/mongo';
 
-export const FlatColors = new Mongo.Collection('flatColors');
+export const MaterialColors = new Mongo.Collection('materialColors');
 
-FlatColors.allow({
+MaterialColors.allow({
 	insert: function(){return true;},
 	update: function(){return true;},
 });

@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
-import ColorCard from './colorCard';
+import FlatColorCard from './flatColorCard';
 import {createContainer} from 'meteor/react-meteor-data';
 import {FlatColors} from '../../imports/collections/FlatColors';
 
 class FlatColorList extends Component {
-
   render(){
     return (
       <div className="flatColorList">
-          {this.props.flatColors.map(color => <ColorCard key={color._id} color={color} />) }
+          {this.props.flatColors.map(color => <FlatColorCard key={color._id} color={color} />) }
       </div>
     );
   }

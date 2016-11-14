@@ -2,6 +2,7 @@ import React, {Component}  from 'react';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import FlatColorList from './flatColorList';
+import MaterialColorList from './materialColorList';
 
 injectTapEventPlugin();
 
@@ -20,9 +21,7 @@ class ColorTabComponent extends Component {
         </Tab>
         <Tab label="Mateiral UI" >
           <div>
-            <p>
-              This is under development.
-            </p>
+            <MaterialColorList />
           </div>
         </Tab>
         <Tab label="Industrial UI" >

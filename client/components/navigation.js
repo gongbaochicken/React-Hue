@@ -17,9 +17,6 @@ class Navigation extends Component {
           <li>
             <a href="/palette">Palette</a>
           </li>
-          <li>
-            <a href="/x">Generater</a>
-          </li>
         </ul>
       </nav>
     );

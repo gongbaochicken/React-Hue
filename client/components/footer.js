@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="footerSection">
-        <i className="fa fa-github-alt fa-3x"></i>
+        <a href="https://github.com/gongbaochicken/React-Hue"><i className="fa fa-github-alt fa-5x"></i></a>
       </div>
     );
   }
