@@ -4,7 +4,7 @@
 React Hue ia a color palette tool built in a combination of Meteor.js, React, Material UI, Bootstrap. This simple web app mainly to contribute to seek what are better colors for web, mobile, UI development, the popular color set used by industry companies, the popular color rank in Dribbble, color toolboxs, and some information for color blindness.
 
 ## :memo: Version: Under development.
-## Features:
+## :yum: Features:
  - Pick up popular and suitalbe colors for design and development.
  - Fast realtime render for color changing to boost reactive UX.
  - Reactive way to converse color hex value to rgb.
@@ -18,7 +18,7 @@ React is fast rendered, and enforces a lot of rules and guidelines that make it 
 ##Why use Material UI?
 As a superstart project host by Goolge, Material UI is more clear, attractive, delightful, when it is compared with other popular UI frameworks. Meanwhile, it leverages good sides of React.js, and improves the rendering effects. After using frameworks like Bootstrap for a long time, it is a good time for us to try new tastes.
 
-## Getting Started
+## :cloud: Getting Started
 
 Install the latest version of Node and NPM. We recommend the usage of [NVM](http://nvm.sh).
 
