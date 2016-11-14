@@ -1,4 +1,6 @@
 #React Hue
+[![Build Status](https://travis-ci.org/gongbaochicken/React-Hue.svg?branch=master)](https://travis-ci.org/gongbaochicken/React-Hue) 
+
 React Hue ia a color palette tool built in a combination of Meteor.js, React, Material UI, Bootstrap. This simple web app mainly to contribute to seek what are better colors for web, mobile, UI development, the popular color set used by industry companies, the popular color rank in Dribbble, color toolboxs, and some information for color blindness.
 
 ## :memo: Version: Under development.
@@ -14,7 +16,7 @@ The real-time, easy-use fullstack web platform with data synchronization client/
 React is fast rendered, and enforces a lot of rules and guidelines that make it clearer what the “right” way to do any given task is. While it’s not as tightly integrated with Meteor (yet), it does have a much larger overall ecosystem.
 
 ##Why use Material UI?
-As a superstart project host by Goolge, Material UI is more clear, attractive, delightful, when it is compared with other popular UI framework. Meanwhile, it leverages good sides of React.js, and improves the rendering effects. After using frameworks like Bootstrap for a long time, it is a good time for us to try new tastes.
+As a superstart project host by Goolge, Material UI is more clear, attractive, delightful, when it is compared with other popular UI frameworks. Meanwhile, it leverages good sides of React.js, and improves the rendering effects. After using frameworks like Bootstrap for a long time, it is a good time for us to try new tastes.
 
 ## Getting Started
 
