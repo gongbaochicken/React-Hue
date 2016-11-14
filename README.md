@@ -31,10 +31,10 @@ curl https://install.meteor.com/ | sh
 Clone this repository locally via SSH:
 
 ```sh
-git clone git@github.com:gongbaochicken/React-Hue.git
+git clone https://github.com/gongbaochicken/React-Hue.git
 ```
 
-(or `https://github.com/gongbaochicken/React-Hue.git`)
+(or `git clone git@github.com:gongbaochicken/React-Hue.git` if you have set your SSH key successfully.)
 
 Install the necessary NPM packages:
 
