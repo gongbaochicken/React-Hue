@@ -26,7 +26,7 @@ const FlatColorsSample = [
   {name: 'asbestos', hex: '#7f8c8d', click: 0}
 ];
 
-const materialColor = [
+const MaterialColorsSample = [
   {name: 'red-50', hex: '#FFEBEE', click: 0, lowLum: true},
   {name: 'red-100', hex: '#FFCDD2', click: 0, lowLum: true},
   {name: 'red-200', hex: '#EF9A9A', click: 0, lowLum: true},
@@ -229,7 +229,7 @@ Meteor.startup(() => {
         click: 0
       });
     });
-    _.forEach(materialColors, function(color){
+    _.forEach(MaterialColorsSample, function(color){
       MaterialColors.insert({
         name: color.name,
         hex: color.hex,

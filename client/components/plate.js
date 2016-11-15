@@ -27,6 +27,7 @@ class Plate extends Component {
         if(rgb){
           var rgbString = "RGB(" + rgb.r + "," + rgb.g + "," + rgb.b + ")";
         }
+        console.log(rgbString);
         this.setState({background: value,
                       outputRgb: rgbString});
       }
@@ -67,7 +68,7 @@ class Plate extends Component {
       <div className="plate" style={style}>
         <div className="inputSection">
           <input type="text" name="HEX" id="hexInput" value={this.state.background} onChange={this.handleHexRGB.bind(this)} ref="hex" placeholder="HEX #" autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" />
-          <input type="text" name="rgb" id="rgbInput" defaultValue={this.state.outputRgb} placeholder="rgb" autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" />
+          <input type="text" name="rgb" id="rgbInput" value={this.state.outputRgb} readOnly autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" />
         </div>
       </div>
     );
