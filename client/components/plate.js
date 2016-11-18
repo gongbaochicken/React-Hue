@@ -67,7 +67,7 @@ class Plate extends Component {
     return (
       <div className="plate" style={style}>
         <div className="inputSection">
-          <input type="text" name="HEX" id="hexInput" value={this.state.background} onChange={this.handleHexRGB.bind(this)} ref="hex" placeholder="HEX #" autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" />
+          <input type="text" name="HEX" id="hexInput" value={this.state.background} onChange={this.handleHexRGB.bind(this)} ref="hex" placeholder="HEX #" autoComplete="off" autoCorrect="off" />
           <input type="text" name="rgb" id="rgbInput" value={this.state.outputRgb} readOnly autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" />
         </div>
       </div>

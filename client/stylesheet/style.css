@@ -258,6 +258,28 @@
   position: relative;
 }
 
+.leftSide{
+  width: 100%;
+}
+.reactLiveDemo{
+  width: 400px;
+  height: 200px;
+  background-color: blue;
+}
+
+.colorScrollList{
+  width: 400px;
+  height: 600px;
+  background-color: yellow;
+}
+
+.cssBoard{
+  width: 100%;
+  height: 800px;
+  background-color: black;
+}
+
+
 @media only screen and (max-width: 320px) {
 
    body { font-size: 0.5em; }

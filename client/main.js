@@ -6,6 +6,8 @@ import App from './components/app';
 import ColorTabComponent from './components/colorTabComponent';
 import Converter from './components/converter';
 import SliderPalette from './components/sliderPalette';
+import SelectorContainer from './components/SelectorContainer';
+
 
 const routes = (
   <Router history={browserHistory}>
@@ -13,7 +15,7 @@ const routes = (
       <IndexRoute component={ColorTabComponent} />
       <Route path="converter" component={Converter} />
       <Route path="palette" component={SliderPalette} />
-      <Route path="x" component={ColorTabComponent} />
+      <Route path="selector" component={SelectorContainer} />
     </Route>
   </Router>
 );
