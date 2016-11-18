@@ -6,12 +6,11 @@
   },
   "dependencies": {
     "lodash": "^4.16.6",
-    "material-ui": "^0.16.1",
+    "material-ui": "^0.16.3",
     "meteor-node-stubs": "~0.2.0",
-    "react": "^15.3.2",
+    "react": "^15.4.0",
     "react-addons-pure-render-mixin": "^15.3.2",
     "react-dom": "^15.3.2",
-    "react-router": "^3.0.0",
-    "react-tap-event-plugin": "^1.0.0"
+    "react-router": "^3.0.0"
   }
 }
