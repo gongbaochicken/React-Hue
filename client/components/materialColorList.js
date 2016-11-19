@@ -16,6 +16,5 @@ class MaterialColorList extends Component {
 export default createContainer(()=> {
   //set up subscribe
   Meteor.subscribe('materialColors');
-
   return {materialColors: MaterialColors.find({}).fetch()};
 }, MaterialColorList);

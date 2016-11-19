@@ -2,10 +2,8 @@ import React, {Component}  from 'react';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-
 import Navigation from './navigation';
 import Footer from './footer';
-
 
 const muiTheme = getMuiTheme({
   slider: {

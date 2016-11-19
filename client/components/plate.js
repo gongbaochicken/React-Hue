@@ -60,7 +60,7 @@ class Plate extends Component {
   // }
 
   render(){
-    var style = {
+    let style = {
       background: this.state.background
     };
 

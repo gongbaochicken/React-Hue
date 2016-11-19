@@ -19,7 +19,7 @@ class FlatColorCard extends Component{
 
   handleFlatColorVote(event){
     event.preventDefault();
-    var colorID = this.props.color._id;
+    let colorID = this.props.color._id;
     FlatColors.update(colorID, {$inc: {click: 1}});
     this.setState({open: true});
   }

@@ -2,9 +2,9 @@ import React from 'react';
 
 const SampleModal = ({color}) => {
   const {name, hex} = color;
-  var titleStyle = {background: hex};
-  var row1Style = {background: hex};
-  var row2Style = {color: hex};
+  let titleStyle = {background: hex};
+  let row1Style = {background: hex};
+  let row2Style = {color: hex};
   return(
     <div className="sampleOnTest">
       <div className="sampleTitle" style={titleStyle}>

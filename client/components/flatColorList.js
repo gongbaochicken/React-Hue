@@ -16,6 +16,5 @@ class FlatColorList extends Component {
 export default createContainer(()=> {
   //set up subscribe
   Meteor.subscribe('flatColors');
-
   return {flatColors: FlatColors.find({}).fetch()};
 }, FlatColorList);
