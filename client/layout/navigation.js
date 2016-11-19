@@ -17,6 +17,9 @@ class Navigation extends Component {
           <li>
             <a href="/palette">Palette</a>
           </li>
+          <li>
+            <a href="/selector">Selector</a>
+          </li>
         </ul>
       </nav>
     );

@@ -7,6 +7,7 @@ class SliderPalette extends Component {
     this.state = {background: 'rgb(25, 178, 206)', r: 25, g: 187, b:206};
   }
 
+  /* Todo: Create a new slider collection to combine these three handles */
   handleChangeR(event, value){
       event.preventDefault();
       let rVal = value;
@@ -54,9 +55,9 @@ class SliderPalette extends Component {
           </div>
         </div>
         <div className="sliderGroup" style={style}>
-          <Slider name="R" defaultValue={25} min={0} max={255} step={1} onChange={this.handleChangeR.bind(this)} ref="r" />
-          <Slider name="G" defaultValue={187} min={0} max={255} step={1} onChange={this.handleChangeG.bind(this)} ref="g" />
-          <Slider name="B" defaultValue={206} min={0} max={255} step={1} onChange={this.handleChangeB.bind(this)} ref="b" />
+          <Slider name="R" defaultValue={25} value={this.state.value} min={0} max={255} step={1} onChange={this.handleChangeR.bind(this)} ref="r" />
+          <Slider name="G" defaultValue={187} value={this.state.value} min={0} max={255} step={1} onChange={this.handleChangeG.bind(this)} ref="g" />
+          <Slider name="B" defaultValue={206} value={this.state.value} min={0} max={255} step={1} onChange={this.handleChangeB.bind(this)} ref="b" />
         </div>
       </div>
     );

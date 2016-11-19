@@ -258,30 +258,39 @@
   position: relative;
 }
 
+.backgroundBoard{
+  background-color: #ecf0f1;
+}
+
 .leftSide{
-  width: 100%;
+
 }
 .reactLiveDemo{
-  width: 400px;
   height: 200px;
-  background-color: blue;
 }
 
 .colorScrollList{
-  width: 400px;
-  height: 600px;
-  background-color: yellow;
+  height: 500px;
+}
+
+.colStyle{
+  font-size: 30px;
+  text-align: center;
+}
+
+.columnColorBlock{
+  width: 100%;
+  height: auto;
 }
 
 .cssBoard{
-  width: 100%;
   height: 800px;
   background-color: black;
+  border: 3px #fff;
+  color: green;
 }
 
 
 @media only screen and (max-width: 320px) {
-
    body { font-size: 0.5em; }
-
 }
