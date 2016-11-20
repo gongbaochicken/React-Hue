@@ -5,32 +5,11 @@ import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColu
   from 'material-ui/Table';
 import TableRowTemplate from './tableRowTemplate';
 import TextField from 'material-ui/TextField';
-import ColorCheckList from './colorCheckList';
-//import FlatColorList from './flatColorList';
-//import MaterialColorList from './materialColorList';
-
-const FlatColorsSample = [
-  {name: 'turquoise', hex: '#1abc9c', click: 0},
-  {name: 'emerland', hex: '#2ecc71', click: 0},
-  {name: 'peterRiver', hex: '#3498db', click: 0},
-  {name: 'amethyst', hex: '#9b59b6', click: 0},
-  {name: 'wetAsphalt', hex: '#34495e', click: 0},
-  {name: 'greenSea', hex: '#16a085', click: 0},
-  {name: 'nephritis', hex: '#27ae60', click: 0},
-  {name: 'belizeHol', hex: '#2980b9', click: 0},
-  {name: 'wisteria', hex: '#8e44ad', click: 0},
-  {name: 'midnightBlue', hex: '#2c3e50', click: 0},
-  {name: 'sunFlower', hex: '#f1c40f', click: 0},
-  {name: 'carrot', hex: '#e67e22', click: 0},
-  {name: 'alizarin', hex: '#e74c3c', click: 0},
-  {name: 'clouds', hex: '#ecf0f1', click: 0},
-  {name: 'concrete', hex: '#95a5a6', click: 0},
-  {name: 'orange', hex: '#f39c12', click: 0},
-  {name: 'pumpkin', hex: '#d35400', click: 0},
-  {name: 'pomegranate', hex: '#c0392b', click: 0},
-  {name: 'silver', hex: '#bdc3c7', click: 0},
-  {name: 'asbestos', hex: '#7f8c8d', click: 0}
-];
+import CopyToClipboard from 'react-copy-to-clipboard';
+import AppBar from 'material-ui/AppBar';
+import CircularProgress from 'material-ui/CircularProgress';
+import Toggle from 'material-ui/Toggle';
+import MaterialColors from '../data/materialColors';
 
 class SelectorContainer extends Component {
   constructor(props){
@@ -43,7 +22,6 @@ class SelectorContainer extends Component {
       showRowHover: false,
       selectable: true,
       multiSelectable: true,
-      enableSelectAll: true,
       deselectOnClickaway: true,
       showCheckboxes: true,
       height: '500px',
@@ -55,10 +33,10 @@ class SelectorContainer extends Component {
     let css = '';
     rows.forEach(colorIndex =>{
       css += "@";
-      css += FlatColorsSample[colorIndex].name;
+      css += MaterialColors[colorIndex].name;
       css += ": ";
-      css += FlatColorsSample[colorIndex].hex;
-      css += '\n';
+      css += MaterialColors[colorIndex].hex;
+      css += ';\n';
     });
     this.setState({
       selected: rows,
@@ -79,6 +57,16 @@ class SelectorContainer extends Component {
     return (
       <div className="backgroundBoard row">
         <div className="row reactLiveDemo">
+          <AppBar
+            title="Example Live Demo"
+            iconClassNameRight="muidocs-icon-navigation-expand-more"
+          />
+          <CircularProgress />
+          <Toggle
+            label="Toggle"
+            defaultToggled={true}
+            style={{width: "100px"}}
+          />
         </div>
         <div className="row">
           <div className="col-md-7 colorScrollList">
@@ -95,14 +83,14 @@ class SelectorContainer extends Component {
                 enableSelectAll={this.state.enableSelectAll}
               >
                 <TableRow>
-                  <TableHeaderColumn colSpan="3" tooltip="Color Selector" style={{textAlign: 'center'}}>
+                  <TableHeaderColumn colSpan="3" tooltip="Color Selector" style={{fontSize: '22px', textAlign: 'center'}}>
                     Color Selector
                   </TableHeaderColumn>
                 </TableRow>
                 <TableRow>
-                  <TableHeaderColumn tooltip="The ID">ID</TableHeaderColumn>
-                  <TableHeaderColumn tooltip="Color Name">Color Name</TableHeaderColumn>
-                  <TableHeaderColumn tooltip="Color Hex">Color Hex</TableHeaderColumn>
+                  <TableHeaderColumn tooltip="The ID" style={{fontSize: '18px', textAlign: 'center'}}>ID</TableHeaderColumn>
+                  <TableHeaderColumn tooltip="Color Name" style={{fontSize: '18px', textAlign: 'center'}}>Color Name</TableHeaderColumn>
+                  <TableHeaderColumn tooltip="Color Hex" style={{fontSize: '18px', textAlign: 'center'}}>Color Hex</TableHeaderColumn>
                 </TableRow>
               </TableHeader>
               <TableBody
@@ -112,14 +100,14 @@ class SelectorContainer extends Component {
                 showRowHover={this.state.showRowHover}
                 stripedRows={this.state.stripedRows}
               >
-                {FlatColorsSample.map((color, index) => (
+                {MaterialColors.map((color, index) => (
                   <TableRow style={{fontSize:'20px', textAlign:'center', background:color.hex,
                   color: '#fff', fontWeight:'border',}} key={index}
                   selected={this.state.selected.indexOf(index) !== -1}
                   >
-                    <TableRowColumn>{index}</TableRowColumn>
-                    <TableRowColumn>{color.name}</TableRowColumn>
-                    <TableRowColumn>{color.hex}</TableRowColumn>
+                    <TableRowColumn style={{fontSize: '16px', textAlign: 'center'}}>{index}</TableRowColumn>
+                    <TableRowColumn style={{fontSize: '16px', textAlign: 'center'}}>{color.name}</TableRowColumn>
+                    <TableRowColumn style={{fontSize: '16px', textAlign: 'center'}}>{color.hex}</TableRowColumn>
                   </TableRow>
                   ))}
               </TableBody>
@@ -135,6 +123,9 @@ class SelectorContainer extends Component {
               fullWidth={true}
               multiLine={true}
             />
+            <CopyToClipboard text={this.state.cssString} >
+              <button className="btn btn-success copyBtn">Copy to clipboard</button>
+            </CopyToClipboard>
           </div>
         </div>
       </div>

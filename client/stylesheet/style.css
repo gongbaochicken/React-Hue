@@ -267,29 +267,30 @@
 }
 .reactLiveDemo{
   height: 200px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10px;
 }
-
 .colorScrollList{
   height: 500px;
 }
-
 .colStyle{
   font-size: 30px;
   text-align: center;
 }
-
 .columnColorBlock{
   width: 100%;
   height: auto;
 }
-
 .cssBoard{
-  height: 800px;
+  height: 700px;
   background-color: black;
   border: 3px #fff;
   color: green;
 }
-
+.copyBtn{
+  width: 100%;
+}
 
 @media only screen and (max-width: 320px) {
    body { font-size: 0.5em; }

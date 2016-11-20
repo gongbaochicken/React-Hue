@@ -1,4 +1,4 @@
-const materialColor = [
+const MaterialColors = [
   {name: 'red-50', hex: '#FFEBEE', click: 0, lowLum: true},
   {name: 'red-100', hex: '#FFCDD2', click: 0, lowLum: true},
   {name: 'red-200', hex: '#EF9A9A', click: 0, lowLum: true},
@@ -190,3 +190,5 @@ const materialColor = [
   {name: 'blue-gray-800', hex: '#37474F', click: 0, lowLum: true},
   {name: 'blue-gray-900', hex: '#263238', click: 0, lowLum: true},
 ];
+
+export default MaterialColors;
