@@ -208,10 +208,13 @@
 }
 
 #hexInput, #rgbInput {
+  color: #59626a;
+  font-size: 4em;
+  font-weight: bolder;
+  text-align: center;
   background: transparent;
   border: 0;
   border-bottom: 1px solid rgba(34, 34, 34, .3);
-  font-size: 3em;
   padding: 0;
   padding-bottom: 1px;
   margin: .5em 0 .25em;
@@ -246,8 +249,9 @@
 }
 .sliderRGBValue{
   margin-top: 20px;
-  font-size: 22px;
-  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
   font-weight: bolder;
 }
 .sliderGroup {
@@ -260,6 +264,7 @@
 
 .backgroundBoard{
   background-color: #ecf0f1;
+  width: 100%;
 }
 
 .leftSide{
@@ -286,7 +291,6 @@
   height: 700px;
   background-color: black;
   border: 3px #fff;
-  color: green;
 }
 .copyBtn{
   width: 100%;

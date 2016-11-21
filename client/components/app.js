@@ -7,8 +7,8 @@ import Footer from '../layout/footer';
 
 const muiTheme = getMuiTheme({
   slider: {
-    trackColor: '#2ecc71',
-    selectionColor: '#3498db',
+    trackColor: '#146eb4',
+    selectionColor: '#fd5c63',
     trackSize: 10,
     handleSize: 20
   },

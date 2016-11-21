@@ -50,26 +50,14 @@ class SelectorContainer extends Component {
       color: 'green'
     };
 
-    let cssTextAreaStyle={
+    let cssTextAreaStyle = {
       background: 'white',
-    }
+    };
 
     return (
       <div className="backgroundBoard row">
-        <div className="row reactLiveDemo">
-          <AppBar
-            title="Example Live Demo"
-            iconClassNameRight="muidocs-icon-navigation-expand-more"
-          />
-          <CircularProgress />
-          <Toggle
-            label="Toggle"
-            defaultToggled={true}
-            style={{width: "100px"}}
-          />
-        </div>
         <div className="row">
-          <div className="col-md-7 colorScrollList">
+          <div className="col-md-7 col-lg-7 col-sm-7 colorScrollList">
             <Table
               height={this.state.height}
               fixedHeader={this.state.fixedHeader}
@@ -99,6 +87,7 @@ class SelectorContainer extends Component {
                 deselectOnClickaway={this.state.deselectOnClickaway}
                 showRowHover={this.state.showRowHover}
                 stripedRows={this.state.stripedRows}
+                displayBorder="false"
               >
                 {MaterialColors.map((color, index) => (
                   <TableRow style={{fontSize:'20px', textAlign:'center', background:color.hex,
@@ -113,7 +102,7 @@ class SelectorContainer extends Component {
               </TableBody>
             </Table>
           </div>
-          <div className="cssBoard col-md-5">
+          <div className="cssBoard col-md-5 col-lg-5 col-sm-5">
             <TextField
               id="cssBoardId"
               value={this.state.cssString}
