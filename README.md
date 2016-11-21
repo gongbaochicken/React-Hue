@@ -3,6 +3,8 @@
 
 React Hue ia a color palette tool built in a combination of Meteor.js, React, Material UI, Bootstrap. This simple web app mainly to contribute to seek what are better colors for web, mobile, UI development, the popular color set used by industry companies, the popular color rank in Dribbble, color toolboxs, and some information for color blindness.
 
+Demo: http://react-hue.herokuapp.com/
+
 ![demo gif](demoGif/demo1.gif)
 
 Please forgive this compressed gif at this time, and try to run it locally if you have interest. The demo will be deployed soon.
@@ -13,6 +15,7 @@ Please forgive this compressed gif at this time, and try to run it locally if yo
  - Pick up popular and suitalbe colors for design and development.
  - Fast realtime render for color changing to boost reactive UX.
  - Reactive way to converse color hex value to rgb.
+ - LESS generator
 
 ## Why use Meteor?
 Meteor is a real-time, easy-use fullstack web platform with data synchronization client/server (DDP). It is on the top of Node.js and MongoDB, which means one language can be used in both front-end client and back-end server. It saves a lot of my time and it keeps its promise of optimizing for developer happiness.
