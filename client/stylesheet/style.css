@@ -108,7 +108,7 @@
   width: 10%;
   max-width: 150px;
   min-width: 100px;
-  height: 25vh;
+  height: 20vh;
   float: left;
   background-color: #fff;
   margin: 0;
@@ -206,7 +206,6 @@
   margin-left: 25%;
   padding-top: 200px;
 }
-
 #hexInput, #rgbInput {
   color: #59626a;
   font-size: 4em;
@@ -261,14 +260,9 @@
   margin-top: 150px;
   position: relative;
 }
-
 .backgroundBoard{
   background-color: #ecf0f1;
   width: 100%;
-}
-
-.leftSide{
-
 }
 .reactLiveDemo{
   height: 200px;
@@ -283,7 +277,7 @@
   font-size: 30px;
   text-align: center;
 }
-.columnColorBlock{
+.columnColorBlock, .copyBtn{
   width: 100%;
   height: auto;
 }
@@ -291,9 +285,6 @@
   height: 700px;
   background-color: black;
   border: 3px #fff;
-}
-.copyBtn{
-  width: 100%;
 }
 
 @media only screen and (max-width: 320px) {
