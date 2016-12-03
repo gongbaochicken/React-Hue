@@ -6,9 +6,6 @@ import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColu
 import TableRowTemplate from './tableRowTemplate';
 import TextField from 'material-ui/TextField';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import AppBar from 'material-ui/AppBar';
-import CircularProgress from 'material-ui/CircularProgress';
-import Toggle from 'material-ui/Toggle';
 import MaterialColors from '../data/materialColors';
 
 class SelectorContainer extends Component {

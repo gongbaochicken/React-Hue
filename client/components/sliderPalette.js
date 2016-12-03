@@ -4,7 +4,7 @@ import Slider from 'material-ui/Slider';
 class SliderPalette extends Component {
   constructor(props){
     super(props);
-    this.state = {background: 'rgb(25, 178, 206)', r: 25, g: 187, b:206};
+    this.state = {background: 'RGB(25, 178, 206)', r: 25, g: 187, b:206};
   }
 
   /* Todo: Create a new slider collection to combine these three handles */
@@ -14,7 +14,7 @@ class SliderPalette extends Component {
       let gVal = this.state.g;
       let bVal = this.state.b;
 
-      var rgbString = "rgb(" + rVal + "," + gVal + "," + bVal + ")";
+      var rgbString = "RGB(" + rVal + "," + gVal + "," + bVal + ")";
       this.setState({background: rgbString,
                     r: rVal, g: gVal, b: bVal});
   }
@@ -25,7 +25,7 @@ class SliderPalette extends Component {
       let gVal = value;
       let bVal = this.state.b;
 
-      var rgbString = "rgb(" + rVal + "," + gVal + "," + bVal + ")";
+      var rgbString = "RGB(" + rVal + "," + gVal + "," + bVal + ")";
       this.setState({background: rgbString,
                     r: rVal, g: gVal, b: bVal});
   }
@@ -36,7 +36,7 @@ class SliderPalette extends Component {
       let gVal = this.state.g;
       let bVal = value;
 
-      var rgbString = "rgb(" + rVal + "," + gVal + "," + bVal + ")";
+      var rgbString = "RGB(" + rVal + "," + gVal + "," + bVal + ")";
       this.setState({background: rgbString,
                     r: rVal, g: gVal, b: bVal});
   }
