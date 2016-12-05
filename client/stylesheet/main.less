@@ -1,0 +1,48 @@
+/*
+  React Hue main less file
+  Author:   Zhuo Jia
+  Version:  1.1
+  Time:     2016
+  license:  MIT
+*/
+
+@import "./navbar.import.less";
+@import "./footer.import.less";
+@import "./home.import.less";
+@import "./palette.import.less";
+@import "./sliderpalette.import.less";
+@import "./selector.import.less";
+
+//  * 1. Set default font family to sans-serif.
+//  * 2. Prevent iOS text size adjust after orientation change, without disabling user zoom.
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+//  Remove default margin.
+body { margin: 0 }
+
+// HTML5 display definitions ==========================================================================
+//  * Correct `block` display not defined for any HTML5 element in IE 8/9.
+//  * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+//  * Correct `block` display not defined for `main` in IE 11.
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+@media only screen and (max-width: 320px) {
+   body { font-size: 0.5em; }
+}

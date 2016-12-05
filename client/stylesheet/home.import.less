@@ -1,0 +1,171 @@
+/*
+  React Hue main less file
+  Author:   Zhuo Jia
+  Version:  1.1
+  Time:     2016
+  license:  MIT
+*/
+
+@background-color: #ffffff;
+
+/*========Flat UI Color===========*/
+.flatColorList{
+  padding: 0;
+  margin: 0;
+}
+.flatColorCard {
+  position: relative;
+  width: 20%;
+  height: 25vh;
+  float: left;
+  background-color: @background-color;
+  margin: 0;
+  margin-top: 0px;
+  box-shadow: 0 1px 0px rgba(0,0,10,0.15);
+  transition: all 0.3s ease-in-out;
+
+  &:after{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &:hover {
+    transform: scale(1.16, 1.16);
+    z-index: 1;
+    &:after {
+      opacity: 1;
+    }
+  }
+  > .img-responsive{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  >.textblock{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: @background-color;
+    opacity: 0;
+
+    &:hover{
+      transition: 1s ease-in-out;
+      opacity: 1;
+    }
+  }
+  .colorName {
+    top: 50px;
+  }
+  .colorHex {
+    top: 100px;
+  }
+  .colorClick {
+    top: 150px;
+  }
+}
+
+/*========Material UI Color===========*/
+.materialColorList{
+  width: 90%;
+  margin-left: 5%;
+}
+.materialColorCard {
+  position: relative;
+  width: 10%;
+  max-width: 150px;
+  min-width: 100px;
+  height: 20vh;
+  float: left;
+  background-color: #fff;
+  margin: 0;
+  margin-top: 0px;
+  box-shadow: 0 1px 0px rgba(0,0,10,0.15);
+  transition: all 0.3s ease-in-out;
+
+  &:after{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &:hover {
+    transform: scale(1.16, 1.16);
+    z-index: 1;
+
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  > .img-responsive{
+    margin-top: 10px;
+    width: 100%;
+    height: 60%;
+    position: relative;
+  }
+  > .textblock{
+    width: 100%;
+    height: 30%;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: gray;
+  }
+  > .colorClick {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 150px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+
+    &:hover {
+      transition: 1s ease-in-out;
+      opacity: 1;
+    }
+  }
+}
+
+/*===============Modal===============*/
+.sampleOnTest {
+  border: 1px;
+  border-color: @background-color;
+  width: 100%;
+  i {
+    margin: 0px 25px 20px 25px;
+  }
+  .sampleTitle{
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
+  .firstRow{
+    padding-top: 10px;
+    color: @background-color;
+  }
+  .secondRow{
+    padding-top: 10px;
+    background: @background-color;
+  }
+}
+
+.invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}

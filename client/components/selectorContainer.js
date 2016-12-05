@@ -21,7 +21,7 @@ class SelectorContainer extends Component {
       multiSelectable: true,
       deselectOnClickaway: true,
       showCheckboxes: true,
-      height: '500px',
+      height: '750px',
       selected: [],
     };
   }
