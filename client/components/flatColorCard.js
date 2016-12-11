@@ -13,7 +13,6 @@ const customContentStyle = {
 class FlatColorCard extends Component{
   constructor(props){
     super(props);
-
     this.state = {open: false};
   }
 
