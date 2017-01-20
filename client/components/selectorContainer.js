@@ -6,7 +6,7 @@ import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColu
 import TableRowTemplate from './tableRowTemplate';
 import TextField from 'material-ui/TextField';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import MaterialColors from '../data/materialColors';
+import MaterialColorSample from '../data/materialColors';
 
 class SelectorContainer extends Component {
   constructor(props){
@@ -30,9 +30,9 @@ class SelectorContainer extends Component {
     let css = '';
     rows.forEach(colorIndex =>{
       css += "@";
-      css += MaterialColors[colorIndex].name;
+      css += MaterialColorSample[colorIndex].name;
       css += ": ";
-      css += MaterialColors[colorIndex].hex;
+      css += MaterialColorSample[colorIndex].hex;
       css += ';\n';
     });
     this.setState({
@@ -50,6 +50,8 @@ class SelectorContainer extends Component {
     let cssTextAreaStyle = {
       background: 'white',
     };
+
+    let cssStr = this.state.cssString;
 
     return (
       <div className="backgroundBoard row">
@@ -86,7 +88,7 @@ class SelectorContainer extends Component {
                 stripedRows={this.state.stripedRows}
                 displayBorder="false"
               >
-                {MaterialColors.map((color, index) => (
+                {MaterialColorSample.map((color, index) => (
                   <TableRow style={{fontSize:'20px', textAlign:'center', background:color.hex,
                   color: '#fff', fontWeight:'border',}} key={index}
                   selected={this.state.selected.indexOf(index) !== -1}
@@ -109,7 +111,7 @@ class SelectorContainer extends Component {
               fullWidth={true}
               multiLine={true}
             />
-            <CopyToClipboard text={this.state.cssString} >
+            <CopyToClipboard text={cssStr} >
               <button className="btn btn-success copyBtn">Copy to clipboard</button>
             </CopyToClipboard>
           </div>

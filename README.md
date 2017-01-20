@@ -54,6 +54,7 @@ npm install
 Then run the app with:
 
 ```sh
+meteor reset
 meteor
 ```
 
