@@ -29,9 +29,6 @@ class Navigation extends Component {
           <li id = "palette" className={(this.state.selected === "palette"?"active":"")} onClick={this.handleClick.bind(this)}>
             <a href="/palette">Palette</a>
           </li>
-          <li id = "selector" className={(this.state.selected === "selector"?"active":"")} onClick={this.handleClick.bind(this)}>
-            <a href="/selector">Selector</a>
-          </li>
         </ul>
       </nav>
     );

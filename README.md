@@ -1,7 +1,7 @@
-#React Hue
+# React Hue
 [![Build Status](https://travis-ci.org/gongbaochicken/React-Hue.svg?branch=master)](https://travis-ci.org/gongbaochicken/React-Hue)
 
-React Hue is a color palette tool built in a combination of Meteor.js, React, Material UI, Bootstrap. This simple web app mainly to contribute to seek what are better colors for web, mobile, UI development, the popular color set used by industry companies, color toolboxes, and some information for color blindness.
+React Hue is a color palette tool built in a combination of Meteor.js, React, Material UI, Bootstrap. This simple web app mainly to contribute to seek what are better colors for web, mobile, UI development, the popular color set used by industry companies, and it also provides with color toolboxes. Specially, I am planning to add some research result about some information for color blindness.
 
 Demo: http://react-hue.herokuapp.com/
 
