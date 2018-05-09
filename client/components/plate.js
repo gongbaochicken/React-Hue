@@ -33,32 +33,6 @@ class Plate extends Component {
       }
   }
 
-  // handleRGBHex(event){
-  //   event.preventDefault();
-  //   let value = this.refs.rgb.value;
-  //
-  //   //rgb(0,0,0)
-  //   if(value.length > 10){
-  //     const str1 = value.substring(4,value.length - 1);
-  //     console.log(str1);
-  //     var partsOfStr = str1.split(',');
-  //     if(partsOfStr.length == 3){
-  //       var r = parseInt(partsOfStr[0]);
-  //       var g = parseInt(partsOfStr[1]);
-  //       var b = parseInt(partsOfStr[2]);
-  //       var hexValue = rgbToHex(r,g,b);
-  //       console.log(hexValue);
-  //       this.setState({background: value,
-  //                     outputRgb: value,
-  //                     outputHex: hexValue});
-  //     }
-  //   }else{
-  //     this.setState({background: '',
-  //                   outputRgb: '',
-  //                   outputHex: ''});
-  //   }
-  // }
-
   render(){
     let style = {
       background: this.state.background
